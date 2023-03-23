@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(s){  
+              let answer;               
+              let idx = Math.floor(s.length / 2)
+              if ( s.length % 2 === 0) {
+                answer = s[idx-1] + s[idx];
+              } else {
+                answer = s[idx];
+              }
+                return answer;
+            }
+            console.log(solution("study"));
+            console.log(solution("pass"));
+        </script>
+    </body>
+</html>

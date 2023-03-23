@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>  
+        function solution(a, b, c){
+            let nums = [a,b,c];
+            let min = a;
+
+            for(let num of nums) {
+                min = min > num ? num : min;
+                return min;
+            }
+
+}
+console.log(solution(2, 5, 1));
+        </script>
+    </body>
+</html>
