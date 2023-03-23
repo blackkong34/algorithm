@@ -5,7 +5,7 @@ function solution(quiz) {
     return quiz.map(v => {
         let [q, ans] = v.split(" = ");
         let question = new Function(`return ${q}`);
-        return question() == ans ? "O" : "X";
-        // return eval(q) == ans ? "O" : "X"
+        // return question() == ans ? "O" : "X";
+        return eval(q) == ans ? "O" : "X"
     })
 }
