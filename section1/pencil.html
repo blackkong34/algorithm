@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(n){
+                let answer;
+              answer = n % 12 === 0 ? n / 12 : n / 12 + 1;
+              return Math.floor(answer);
+            }
+
+            console.log(solution(178));
+        </script>
+    </body>
+</html>
