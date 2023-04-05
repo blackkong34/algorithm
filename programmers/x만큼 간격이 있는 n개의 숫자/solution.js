@@ -3,13 +3,13 @@
 function solution(x, n) {
     var answer = [];
   
-    // let i = x;
-    // while(answer.length !== n) {
-    //     answer.push(i);
-    //     i += x;
-    // }
+    let i = x;
+    while(answer.length !== n) {
+        answer.push(i);
+        i += x;
+    }
     
-    // return answer;
+    return answer;
     
-    return Array(n).fill(x).map((v, idx) => v * (idx + 1))
+    // return Array(n).fill(x).map((v, idx) => v * (idx + 1))
 }
