@@ -15,25 +15,13 @@ function solution(num) {
 //     }
     
 //     return answer >= 500 ? -1 : answer;    
-    
-    //     while(num < 500) {
-    //         if(num === 1) {
-    //             return answer;
-    //             }
-    //         answer++;  
-    //         num = num % 2 ? (num * 3) + 1 : num / 2;              
-    //     }
-    // return -1;
-    
-       while (answer < 500) {
-        if (num === 1) {
-            return answer;
-        }
-        answer++;
-        num = num % 2 === 0 ? num /2 : num *3 +1;
-    }
 
-    return -1;
-    
-    
+        while(answer < 500) {
+            if(num === 1) {
+                return answer;
+                }
+            answer++;  
+            num = num % 2 ? (num * 3) + 1 : num / 2;              
+        }
+    return -1;     
 }
