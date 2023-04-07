@@ -9,5 +9,6 @@ function solution(s) {
     
 //     return Number(answer);
 //     // return Number(s.valueOf())
-    return 1*s
+    // return 1*s
+    return Number(s)
 }
