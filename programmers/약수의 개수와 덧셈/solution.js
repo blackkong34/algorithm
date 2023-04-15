@@ -15,8 +15,19 @@ function solution(left, right) {
 //     return answer;
 // }
 
-      for(let i = left; i <= right; i++) {
-        answer += Math.sqrt(i) % 1 ? i: -i
+//       for(let i = left; i <= right; i++) {
+//         answer += Math.sqrt(i) % 1 ? i: -i
+//     }
+//     return answer;
+// }
+
+
+    for (let i = left; i <= right; i++) {
+        if (Number.isInteger(Math.sqrt(i))) {
+            answer -= i;
+        } else {
+            answer += i;
+        }
     }
     return answer;
 }
