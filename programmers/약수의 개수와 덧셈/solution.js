@@ -16,7 +16,7 @@ function solution(left, right) {
 // }
 
       for(let i = left; i <= right; i++) {
-        Number.isInteger(Math.sqrt(i)) ? answer -= i: answer +=i
+        answer += Math.sqrt(i) % 1 ? i: -i
     }
     return answer;
 }
