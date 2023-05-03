@@ -2,9 +2,9 @@
 
 function solution(numLog) {
     var answer = "";
-    const log = {"1" : "w", "-1" : "s", "10" : "d","-10" : "a",};
+    const log = {1 : "w", "-1" : "s", 10 : "d","-10" : "a",};
     for(let i = 0; i < numLog.length-1; i++) {
-        answer += log[(numLog[i+1] - numLog[i]) + ""];
+        answer += log[(numLog[i+1] - numLog[i])];
     }
     return answer;
 }
